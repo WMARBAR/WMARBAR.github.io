@@ -19,8 +19,8 @@ body {
 
 .about-section {
     padding: 20px;
-    text-align: left; /* Alinear texto a la izquierda */
-    background-color: #FFFFFF; /* Fondo blanco para contraste */
+    text-align: left; /* Alinear contenido a la izquierda */
+    background-color: #FFFFFF; /* Fondo blanco */
     color: #000000; /* Texto negro */
 }
 
@@ -29,14 +29,84 @@ body {
     font-family: Consolas, monospace;
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: left; /* Alinear título a la izquierda */
 }
 
-.about-section p {
-    color: #000000;
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Alinear contenido en la parte superior */
+    gap: 15px; /* Espacio entre imagen y texto */
+    flex-wrap: wrap; /* Permitir que el contenido se ajuste en pantallas pequeñas */
+}
+
+.about-text {
     font-family: Consolas, monospace;
     font-size: 18px;
-    margin: 20px 0 0 0; /* Añadir margen superior para separar el texto del título */
-    max-width: 600px; /* Limitar ancho del texto */
     line-height: 1.6; /* Mejorar legibilidad */
     text-align: justify; /* Justificar texto */
+    flex: 1; /* Hacer que el texto ocupe el espacio restante */
+}
+
+.about-image img {
+    max-width: 250px; /* Mantener el tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    display: block; /* Asegurar que se comporte como bloque */
+    flex-shrink: 0; /* Evitar que la imagen se reduzca demasiado */
+}
+
+.button-banner {
+    background-color: #000000; /* Fondo negro */
+    color: #00FF41; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Consolas, monospace;
+    font-size: 40px;
+    margin-top: 20px; /* Separación del contenido superior */
+}
+
+.button-container {
+    text-align: center; /* Centrar los botones */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.button-container button {
+    background-color: #000000; /* Fondo negro */
+    color: #00FF41; /* Texto verde Matrix */
+    font-family: Consolas, monospace;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px; /* Espaciado entre botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #222222; /* Fondo más claro al pasar el mouse */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 50px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .about-content {
+        flex-direction: column; /* Cambiar a diseño de columna en dispositivos móviles */
+    }
+
+    .about-image img {
+        max-width: 150px; /* Reducir tamaño de la imagen en pantallas pequeñas */
+        margin: 0 auto; /* Centrar imagen */
+    }
+
+    .about-text {
+        font-size: 16px; /* Reducir tamaño del texto */
+    }
+
+    .button-container button {
+        width: 90%; /* Hacer botones más anchos en dispositivos pequeños */
+    }
 }
