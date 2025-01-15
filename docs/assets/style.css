@@ -5,8 +5,8 @@ body {
 }
 
 .banner {
-    background-color:#000000; /* Verde oscuro */
-    color: #00FF41;
+    background-color: #000000; /* Negro absoluto */
+    color: #00FF41; /* Verde Matrix */
     text-align: center;
     padding: 50px 0;
 }
@@ -15,4 +15,28 @@ body {
     font-family: 'Consolas', sans-serif;
     font-size: 70px;
     margin: 0;
+}
+
+.about-section {
+    padding: 20px;
+    text-align: left; /* Alinear texto a la izquierda */
+    background-color: #FFFFFF; /* Fondo blanco para contraste */
+    color: #000000; /* Texto negro */
+}
+
+.about-section h2 {
+    color: #000000; /* Verde Matrix */
+    font-family: Consolas, monospace;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #000000;
+    font-family: Consolas, monospace;
+    font-size: 18px;
+    margin: 20px 0 0 0; /* Añadir margen superior para separar el texto del título */
+    max-width: 600px; /* Limitar ancho del texto */
+    line-height: 1.6; /* Mejorar legibilidad */
+    text-align: justify; /* Justificar texto */
 }
