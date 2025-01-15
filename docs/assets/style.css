@@ -1,18 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Consolas, monospace;
 }
 
 .banner {
-    background-color: #013220; /* Verde oscuro */
-    color: white;
+    background-color:#000000; /* Verde oscuro */
+    color: #00FF41;
     text-align: center;
     padding: 50px 0;
 }
 
 .banner h1 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 36px;
+    font-family: 'Consolas', sans-serif;
+    font-size: 70px;
     margin: 0;
 }
