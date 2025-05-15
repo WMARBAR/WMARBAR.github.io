@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Consolas, monospace;
+    background-color: #0D0D0D;
+    color: #00FF41;
 }
 
 .banner {
-    background-color: #000000; /* Negro absoluto */
-    color: #00FF41; /* Verde Matrix */
+    background-color: #000000;
+    color: #00FF41;
     text-align: center;
     padding: 50px 0;
 }
@@ -19,64 +21,58 @@ body {
 
 .about-section {
     padding: 20px;
-    text-align: left; /* Alinear contenido a la izquierda */
-    background-color: #FFFFFF; /* Fondo blanco */
-    color: #000000; /* Texto negro */
+    background-color: #0D0D0D;
+    margin-left: 40px;
 }
 
 .about-section h2 {
-    color: #000000; /* Verde Matrix */
-    font-family: Consolas, monospace;
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: left; /* Alinear título a la izquierda */
+    text-align: left;
 }
 
 .about-content {
     display: flex;
-    align-items: flex-start; /* Alinear contenido en la parte superior */
-    gap: 15px; /* Espacio entre imagen y texto */
-    flex-wrap: wrap; /* Permitir que el contenido se ajuste en pantallas pequeñas */
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .about-text {
-    font-family: Consolas, monospace;
     font-size: 18px;
-    line-height: 1.6; /* Mejorar legibilidad */
-    text-align: justify; /* Justificar texto */
-    flex: 1; /* Hacer que el texto ocupe el espacio restante */
+    line-height: 1.6;
+    text-align: justify;
+    flex: 1;
 }
 
 .about-image img {
-    max-width: 250px; /* Mantener el tamaño de la imagen */
-    height: auto; /* Mantener la proporción */
-    border-radius: 10px; /* Bordes redondeados */
-    display: block; /* Asegurar que se comporte como bloque */
-    flex-shrink: 0; /* Evitar que la imagen se reduzca demasiado */
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .button-banner {
-    background-color: #000000; /* Fondo negro */
-    color: #00FF41; /* Texto blanco */
+    background-color: #000000;
+    color: #00FF41;
     text-align: center;
     padding: 20px 0;
-    font-family: Consolas, monospace;
     font-size: 40px;
-    margin-top: 20px; /* Separación del contenido superior */
+    margin-top: 20px;
 }
 
 .button-container {
-    text-align: center; /* Centrar los botones */
-    margin-top: 20px; /* Espaciado superior */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .button-container button {
-    background-color: #000000; /* Fondo negro */
-    color: #00FF41; /* Texto verde Matrix */
-    font-family: Consolas, monospace;
+    background-color: #000000;
+    color: #00FF41;
     font-size: 18px;
     padding: 10px 20px;
-    margin: 5px; /* Espaciado entre botones */
+    margin: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -84,29 +80,270 @@ body {
 }
 
 .button-container button:hover {
-    background-color: #222222; /* Fondo más claro al pasar el mouse */
+    background-color: #222222;
 }
 
-/* Media Queries para Responsividad */
+.services-section {
+    padding: 20px;
+    background-color: #0D0D0D;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #1A1A1A;
+    color: #00FF41;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.service-card p {
+    text-align: justify; /* Justificar texto */
+}
+
+.service-card:hover {
+    background-color: #222222;
+    transform: scale(1.05);
+}
+
+.contact-section {
+    padding: 20px;
+    background-color: #0D0D0D;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #00FF41;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-buttons button {
+    background-color: #000000;
+    color: #00FF41;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-buttons button:hover {
+    background-color: #222222;
+}
+.whatsapp-contact {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-contact a {
+    color: #00FF41;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-contact a:hover {
+    color: #00cc33;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin-button {
+    margin-top: 15px;
+}
+
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #000000;
+    color: #00FF41;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-link:hover {
+    background-color: #222222;
+    transform: scale(1.05);
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+}
 @media (max-width: 768px) {
+
+    body {
+        padding: 0 20px; /* Espacio lateral para todo el contenido */
+    }
+
+    .banner {
+        padding: 30px 0; /* Ajuste de padding */
+    }
+
     .banner h1 {
-        font-size: 50px; /* Reducir el tamaño del título en pantallas pequeñas */
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px; /* Espacio lateral */
+    }
+
+    .about-section {
+        padding: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .about-content {
-        flex-direction: column; /* Cambiar a diseño de columna en dispositivos móviles */
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
     }
 
     .about-image img {
-        max-width: 150px; /* Reducir tamaño de la imagen en pantallas pequeñas */
-        margin: 0 auto; /* Centrar imagen */
+        max-width: 150px;
+        margin: 0 auto;
+        border-radius: 10px;
     }
 
     .about-text {
-        font-size: 16px; /* Reducir tamaño del texto */
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        margin-bottom: 20px;
     }
 
-    .button-container button {
-        width: 90%; /* Hacer botones más anchos en dispositivos pequeños */
+    .whatsapp-contact {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .whatsapp-contact a {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .whatsapp-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .linkedin-button {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .linkedin-link {
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #00FF41;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .linkedin-link:hover {
+        background-color: #222222;
+    }
+
+    .services-section {
+        padding: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        padding: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .button-container,
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .button-container button,
+    .contact-buttons button {
+        width: 100%;
+        max-width: 250px;
     }
 }
+
+
