@@ -211,14 +211,27 @@ body {
     width: 24px;
     height: 24px;
 }
+
+.download-section a {
+    background-color: #1e201f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-section a:hover {
+    background-color: #265330;
+}
 @media (max-width: 768px) {
 
     body {
-        padding: 0 20px; /* Espacio lateral para todo el contenido */
+        padding: 0 20px;
     }
 
     .banner {
-        padding: 30px 0; /* Ajuste de padding */
+        padding: 30px 0;
     }
 
     .banner h1 {
@@ -229,7 +242,7 @@ body {
     .banner p {
         font-size: 16px;
         text-align: center;
-        padding: 0 10px; /* Espacio lateral */
+        padding: 0 10px;
     }
 
     .about-section {
@@ -344,6 +357,32 @@ body {
         width: 100%;
         max-width: 250px;
     }
+
+    .download-section {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .download-section a {
+        width: 100%;
+        max-width: 250px;
+        display: block;
+        background-color: #1e201f;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 10px auto;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-section a:hover {
+        background-color: #265330;
+        transform: scale(1.05);
+    }
+
+
 }
 
 
